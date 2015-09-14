@@ -1,0 +1,123 @@
+puts : short for puts string. Adds a newline after executing.
+
+print :  short for print sting. Does NOT add a newline after executing.
+
+# :  Also known as octothorpe, when added to the beginning of a line it comments that line out
+
+$ruby insert_filename.rb : basic console command to run a ruby file
+
++ : plus, mathematical operation
+
+- : subtract, minus, mathematical operation
+
+/ : slash, divide, mathematical operation
+
+* : asterisk, multiply, mathematical operation
+
+% : percent, modulus, mathematical operation that returns the remainder of a division problem
+
+<  : less-than, mathermatical operation, can return boolean property
+
+> : greather-than, mathmatical operation, can return boolen property
+
+<= : less-than-equal, mathermatical operation, can return boolean operation
+
+>= : greater-than-equal, mathermatical operation, can return boolean operation
+
+.. : creates a range from start point to end point, inclusive, 1..10 is 1 to 10
+... : creates a range from start point to end point, exclusive, 1...10 is 1 to 9
+
+#{} : grammar for embedding variables in strings in scripts.
+For example, in script #{1 + 1} would result in just displaying 2. this will format your string data.
+
+%{} : similar to #{} but allows for the formatting of multiple values. % is used to specify a format code within a string.	  
+
+floating point : a number with a decimal point, e.g. 4.0
+
+= : single equal, assigns the value of the right to the value of the left
+
+== : double equal, compares the two value and determines if they are the same
+
+"" : notates that the context within the quotes should be considered a string
+
+'' : is similar to to double quotes, as this will indicate to Ruby that it's contents should be considered a string.
+
+puts "." * 10 : this will result in .........., 10x the string.
+
+print var_1 + var_2 + ... : will result in adding the strings together.
+
+true, false : Ruby recognizes these words as keyterms representing the concept of true and false.
+
+puts """ ...string... """ : 
+
+\ : backslash character encodes difficult-to-type characters into a string this symbol is also used to escape characters that would confuse the syntax within your script, e.g. "I am 6'2\" tall."
+
+escape squences : see below
+\n : new line character, starts a new line 
+\t : tabbed character, tabs in line
+\\ : backslash
+\' : single quote
+\" : double quote
+\a : ASCII bell (BEL)
+\b : ASCII backspace (BS)
+\f : ASCII formfeed (FF)
+\n : ASCII linefeed (LF)
+\r ASCII : carriage return (CR)
+\t : ASCII : horizontal tab (TAB)
+\uxxxx : character with 16-bit hex value xxxx UNICODE only
+\v : ASCII vertical tab (VT)
+\ooo : character with octal value ooo
+\xhh : character with hex value hh
+
+gets.chomp: gets user input and takes off the \n new-line character at the end of the user input.
+
+gets : gets user input
+
+.to_i : converts to integer
+.to_f : converts to floating point
+
+ARGV : is the argument variable, it holds the argument you pass to it in the console.
+	   first, second, third = ARGV 
+	   $ruby FILE.rb 1st 2nd 3rd
+	   #{first} = 1st
+	   #{second} = 2nd
+	   #{third} = 3rd
+
+$stdin. : redirects where the script will look for input. For example, when using ARGV in the script will look to the conolse pass arguemnts for input, but when the input needs to be redirected to accept user input, stdin changes the standard input.
+
+open(filename) : opens a file, "filename" is a variable of the named file or file name that was passed as an argument.
+
+.read : reads the file, you can assign the result to a variable.
+readline : reads just one line of a text file
+truncate : empties the file
+write('stuff') : writes "stuff" to the file
+.close : closes the file
+
+irb : ruby shell that you can open in the console.
+quit : will quit out of the irb shell
+
+open(filename, w) : w is an extra parameter to open, Ruby protects file by making you explicitly say you want to write to a file. 
+
+w : write
+r : read
+a : append, this puts the file pointer at the end of the file.
+
+; : allows you to write multiple lines of ruby script on one line
+
+def : define, defines the name of a function
+*args : like argv, but for functions def var_1(*args)
+end : end of the function
+run, call, or use a function : they are all the same thing
+
+w+, r+, a+ : will open the file in both read and write mode and depending on the character use position the file in differnet ways.
+
++= : x = x + y is the same as x += y, increment operator, -= does the same thing but with minus.
+
+seek() : the seek function is dealing in bytes, not lines. seek(0) goes to the first byte in line.
+
+readline : you're reading a line from the file, and moving the read head to the right after the \n that ends that file.
+
+return : to set variable to be a value from a function
+
+
+
